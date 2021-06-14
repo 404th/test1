@@ -1,168 +1,21 @@
 // import LayoutRoutes from "./layout";
-// import Navbar from "./Components/Navbar";
-import { Layout, Menu } from "antd";
+import Navbar from "./Components/Navbar";
+import { Layout, Breadcrumb, Button } from "antd";
+import { SearchOutlined } from "@ant-design/icons";
 import "./App.css";
-import SubMenuMaker from "./Components/SubMenuMaker/subMenuMaker";
+import HomeSide from "./Components/HomeSide";
+import { Link } from "react-router-dom";
 
-// import { UserOutlined } from "@ant-design/icons";
-
-const { Header, Content, Footer, Sider } = Layout;
+// const { Input } = Input;
+const { Content, Footer } = Layout;
 
 function App() {
     return (
         <>
             <Layout className={"container_layout"}>
-                <Sider
-                    breakpoint="lg"
-                    collapsedWidth="0"
-                    onBreakpoint={(broken) => {
-                        console.log(broken);
-                    }}
-                    onCollapse={(collapsed, type) => {
-                        console.log(collapsed, type);
-                    }}
-                    width={"280px"}
-                >
-                    <div className="logo container_logo">
-                        <img
-                            src={"./images/brand.png"}
-                            alt={"brand of the app"}
-                            width={"40px"}
-                        />
-                    </div>
-                    <div className={"container_user_info_cover"}>
-                        <div className={"container_user_info_cover_info"}>
-                            <div
-                                className={
-                                    "container_user_info_cover_info_avatar"
-                                }
-                            >
-                                <img
-                                    className={
-                                        "container_user_info_cover_info_avatar_img"
-                                    }
-                                    src={"./images/avatar.png"}
-                                    alt={"simple avatar"}
-                                />
-                            </div>
-                            <div
-                                className={
-                                    "container_user_info_cover_info_name"
-                                }
-                            >
-                                <span
-                                    className={
-                                        "container_user_info_cover_info_name_name"
-                                    }
-                                >
-                                    Carlota Carnoele
-                                </span>
-                                <span
-                                    className={
-                                        "container_user_info_cover_info_name_role"
-                                    }
-                                >
-                                    Lastname
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <Menu mode="inline" defaultSelectedKeys={["4"]}>
-                        <SubMenuMaker
-                            key1={"7to8fycomdsifuytscadfkuasihjvsdjbfcnfskdf"}
-                            key2={"sdfcijo,sjdmifygdskcfiosdkfjshfh8sd8ofjsh78"}
-                            key3={"fsdfgcsnhimojimudsfcdsimoj,csdcsdgfycsdij"}
-                            key4={"sdfcsgndijcufngcsnhisdmocf,dsfcisdhui"}
-                            key5={"sdfcysugdikp.sdckofijsgynsdijof,ck.sd[f"}
-                        />
-                        <SubMenuMaker
-                            key1={"7to8fsdfduisifuytscadfkuasihjvsdjbfcnfskdf"}
-                            key2={"sdfcidmifysdfdsgdskcfiosdkfjshfh8sd8ofjsh78"}
-                            key3={"fsdfgcskimufsdfsddsfcdsimoj,csdcsdgfycsdij"}
-                            key4={"sdfcsgndsnhisdmocfsdsdgsdsdfg,dsfcisdhui"}
-                            key5={"sdfcysugdckofijsgynsdijof,ck.ssdfsdfd[f"}
-                        />
-                        <SubMenuMaker
-                            key1={"7tosdifuytscadfkuasihjvsdjbfcnfskdf"}
-                            key2={"sdfcsjdmifygdskcfiosdkfjshfh8sd8ofjsh78"}
-                            key3={"fsdfgcsnhimkimudsfcdsimoj,csdcsdgfycsdij"}
-                            key4={"sdfcsgndijchisdsdfsdmocf,dsfcisdhui"}
-                            key5={"sdfcysdckoffsdijsgynsdijof,ck.sd[f"}
-                        />
-                        <SubMenuMaker
-                            key1={"7to8fycomdskuasihsdfsdfjvsdjbfcnfskdf"}
-                            key2={"sdfcijjdmifygdskcfiosdkfjshfh8sd8ofjsh78"}
-                            key3={"fsdfgcsnhimojs,j,csfsdfdsfdcsdgfycsdij"}
-                            key4={"sdfcsgndijcufngcs,dsfcisdhsdfdsfsfsdui"}
-                            key5={"sdfcysugdiofijsgynsdijof,ck.sd[dsfdsfdssf"}
-                        />
-                    </Menu>
-                    <Menu mode="inline" defaultSelectedKeys={["4"]}>
-                        <SubMenuMaker
-                            key1={"7to8fycomdsifuytscadfkuasihjvsdjbfcnfskdf"}
-                            key2={"sdfcijo,sjdmifygdskcfiosdkfjshfh8sd8ofjsh78"}
-                            key3={"fsdfgcsnhimojimudsfcdsimoj,csdcsdgfycsdij"}
-                            key4={"sdfcsgndijcufngcsnhisdmocf,dsfcisdhui"}
-                            key5={"sdfcysugdikp.sdckofijsgynsdijof,ck.sd[f"}
-                        />
-                        <SubMenuMaker
-                            key1={"7to8fsdfduisifuytscadfkuasihjvsdjbfcnfskdf"}
-                            key2={"sdfcidmifysdfdsgdskcfiosdkfjshfh8sd8ofjsh78"}
-                            key3={"fsdfgcskimufsdfsddsfcdsimoj,csdcsdgfycsdij"}
-                            key4={"sdfcsgndsnhisdmocfsdsdgsdsdfg,dsfcisdhui"}
-                            key5={"sdfcysugdckofijsgynsdijof,ck.ssdfsdfd[f"}
-                        />
-                        <SubMenuMaker
-                            key1={"7tosdifuytscadfkuasihjvsdjbfcnfskdf"}
-                            key2={"sdfcsjdmifygdskcfiosdkfjshfh8sd8ofjsh78"}
-                            key3={"fsdfgcsnhimkimudsfcdsimoj,csdcsdgfycsdij"}
-                            key4={"sdfcsgndijchisdsdfsdmocf,dsfcisdhui"}
-                            key5={"sdfcysdckoffsdijsgynsdijof,ck.sd[f"}
-                        />
-                        <SubMenuMaker
-                            key1={"7to8fycomdskuasihsdfsdfjvsdjbfcnfskdf"}
-                            key2={"sdfcijjdmifygdskcfiosdkfjshfh8sd8ofjsh78"}
-                            key3={"fsdfgcsnhimojs,j,csfsdfdsfdcsdgfycsdij"}
-                            key4={"sdfcsgndijcufngcs,dsfcisdhsdfdsfsfsdui"}
-                            key5={"sdfcysugdiofijsgynsdijof,ck.sd[dsfdsfdssf"}
-                        />
-                    </Menu>
-                    <Menu mode="inline" defaultSelectedKeys={["4"]}>
-                        <SubMenuMaker
-                            key1={"7to8fycomdsifuytscadfkuasihjvsdjbfcnfskdf"}
-                            key2={"sdfcijo,sjdmifygdskcfiosdkfjshfh8sd8ofjsh78"}
-                            key3={"fsdfgcsnhimojimudsfcdsimoj,csdcsdgfycsdij"}
-                            key4={"sdfcsgndijcufngcsnhisdmocf,dsfcisdhui"}
-                            key5={"sdfcysugdikp.sdckofijsgynsdijof,ck.sd[f"}
-                        />
-                        <SubMenuMaker
-                            key1={"7to8fsdfduisifuytscadfkuasihjvsdjbfcnfskdf"}
-                            key2={"sdfcidmifysdfdsgdskcfiosdkfjshfh8sd8ofjsh78"}
-                            key3={"fsdfgcskimufsdfsddsfcdsimoj,csdcsdgfycsdij"}
-                            key4={"sdfcsgndsnhisdmocfsdsdgsdsdfg,dsfcisdhui"}
-                            key5={"sdfcysugdckofijsgynsdijof,ck.ssdfsdfd[f"}
-                        />
-                        <SubMenuMaker
-                            key1={"7tosdifuytscadfkuasihjvsdjbfcnfskdf"}
-                            key2={"sdfcsjdmifygdskcfiosdkfjshfh8sd8ofjsh78"}
-                            key3={"fsdfgcsnhimkimudsfcdsimoj,csdcsdgfycsdij"}
-                            key4={"sdfcsgndijchisdsdfsdmocf,dsfcisdhui"}
-                            key5={"sdfcysdckoffsdijsgynsdijof,ck.sd[f"}
-                        />
-                        <SubMenuMaker
-                            key1={"7to8fycomdskuasihsdfsdfjvsdjbfcnfskdf"}
-                            key2={"sdfcijjdmifygdskcfiosdkfjshfh8sd8ofjsh78"}
-                            key3={"fsdfgcsnhimojs,j,csfsdfdsfdcsdgfycsdij"}
-                            key4={"sdfcsgndijcufngcs,dsfcisdhsdfdsfsfsdui"}
-                            key5={"sdfcysugdiofijsgynsdijof,ck.sd[dsfdsfdssf"}
-                        />
-                    </Menu>
-                </Sider>
+                <HomeSide />
                 <Layout>
-                    <Header
-                        className="site-layout-sub-header-background header_background"
-                        style={{ padding: 0 }}
-                    />
+                    <Navbar />
                     <Content style={{ margin: "24px 16px 0" }}>
                         <div
                             className="site-layout-background"
@@ -172,12 +25,95 @@ function App() {
                                 color: "white",
                             }}
                         >
-                            content
+                            <div className={"content_container"}>
+                                <h3 className={"content_container_title"}>
+                                    Profile
+                                </h3>
+                                <Breadcrumb
+                                    className={"content_container_breadcrumb"}
+                                >
+                                    <Breadcrumb.Item>Link 1</Breadcrumb.Item>
+                                    <Breadcrumb.Item>
+                                        <Link href="">Link 2</Link>
+                                    </Breadcrumb.Item>
+                                    <Breadcrumb.Item>
+                                        <Link href="">Link 3</Link>
+                                    </Breadcrumb.Item>
+                                    <Breadcrumb.Item>Link 4</Breadcrumb.Item>
+                                </Breadcrumb>
+                            </div>
+                            <div className={"content_container_barerr"}>
+                                <div
+                                    className={"content_container_barerr_first"}
+                                >
+                                    <div
+                                        className={
+                                            "content_container_barerr_first_card"
+                                        }
+                                    >
+                                        <div
+                                            className={
+                                                "container_user_info_cover_info"
+                                            }
+                                        >
+                                            <div
+                                                className={
+                                                    "container_user_info_cover_info_avatar"
+                                                }
+                                            >
+                                                <img
+                                                    className={
+                                                        "container_user_info_cover_info_avatar_img_barerr"
+                                                    }
+                                                    src={"./images/avatar1.png"}
+                                                    alt={"simple avatar"}
+                                                />
+                                            </div>
+                                            <div
+                                                className={
+                                                    "container_user_info_cover_info_name"
+                                                }
+                                            >
+                                                <span
+                                                    className={
+                                                        "container_user_info_cover_info_name_name_barerr"
+                                                    }
+                                                >
+                                                    Carlota Carnoele
+                                                </span>
+                                                <span
+                                                    className={
+                                                        "container_user_info_cover_info_name_role_barerr"
+                                                    }
+                                                >
+                                                    Lastname
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    className={
+                                        "content_container_barerr_second"
+                                    }
+                                >
+                                    <Button icon={<SearchOutlined />}>
+                                        Search
+                                    </Button>
+                                </div>
+                            </div>
+                            <div className={"content_container_main_title"}>
+                                <h2
+                                    className={
+                                        "content_container_main_title_h2"
+                                    }
+                                >
+                                    Followers
+                                </h2>
+                            </div>
                         </div>
                     </Content>
-                    <Footer style={{ textAlign: "center" }}>
-                        Ant Design ©2018 Created by Ant UED
-                    </Footer>
+                    <Footer style={{ textAlign: "center" }}>©2021</Footer>
                 </Layout>
             </Layout>
         </>

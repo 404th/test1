@@ -187,6 +187,9 @@
 
 .content_container_barerr {
     margin-top: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.24),
+        0px 16px 32px -4px rgba(145, 158, 171, 0.24);
 }
 
 .container_user_info_cover_info {
@@ -204,8 +207,8 @@
 .content_container_barerr_second {
     height: 48px;
     width: 100%;
-    background-color: rgb(42, 133, 39);
-    border-radius: 0 0 16px 16px;
+    background-color: #fff;
+    border-radius: 16px !important;
 }
 
 .content_container_barerr_first_card {
@@ -229,6 +232,7 @@
     line-height: 36px;
     letter-spacing: 0px;
     text-align: left;
+    margin-top: 30px;
 }
 
 .container_user_info_cover_info_name_role_barerr {
@@ -239,6 +243,7 @@
     line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
+    margin-bottom: 20px;
 }
 
 .content_container_barerr_second {
@@ -259,6 +264,47 @@
     line-height: 36px;
     letter-spacing: 0px;
     text-align: left;
+}
+
+.content_container_main_items {
+    display: flex;
+    display: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ant-layout-content {
+    background-color: #fff !important;
+}
+
+.content_container_barerr_second_free {
+    border-radius: 16px !important;
+}
+
+.content_container_barerr_second_buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 16px !important;
+}
+
+.content_container_barerr_second_buttons_button {
+    background-color: transparent !important;
+    font-family: Be Vietnam;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    border: 0 !important;
+    border-bottom: 1px solid transparent !important;
+}
+
+.content_container_barerr_second_buttons_button:hover {
+    border-bottom: 1px solid #00b533 !important;
+    color: #00b533 !important;
 }
 
 @media (max-width: 800px) {

@@ -4,6 +4,7 @@ import { Layout, Breadcrumb, Button } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import "./App.css";
 import HomeSide from "./Components/HomeSide";
+import Follower from "./Components/Follower";
 import { Link } from "react-router-dom";
 
 // const { Input } = Input;
@@ -97,9 +98,41 @@ function App() {
                                         "content_container_barerr_second"
                                     }
                                 >
-                                    <Button icon={<SearchOutlined />}>
-                                        Search
-                                    </Button>
+                                    <div
+                                        className={
+                                            "content_container_barerr_second_free"
+                                        }
+                                    ></div>
+                                    <div
+                                        className={
+                                            "content_container_barerr_second_buttons"
+                                        }
+                                    >
+                                        <Button
+                                            className={
+                                                "content_container_barerr_second_buttons_button"
+                                            }
+                                            icon={<SearchOutlined />}
+                                        >
+                                            Search
+                                        </Button>
+                                        <Button
+                                            className={
+                                                "content_container_barerr_second_buttons_button"
+                                            }
+                                            icon={<SearchOutlined />}
+                                        >
+                                            Search
+                                        </Button>
+                                        <Button
+                                            className={
+                                                "content_container_barerr_second_buttons_button"
+                                            }
+                                            icon={<SearchOutlined />}
+                                        >
+                                            Search
+                                        </Button>
+                                    </div>
                                 </div>
                             </div>
                             <div className={"content_container_main_title"}>
@@ -110,6 +143,17 @@ function App() {
                                 >
                                     Followers
                                 </h2>
+                                <div className={"content_container_main_items"}>
+                                    <Follower />
+                                    <Follower />
+                                    <Follower />
+                                    <Follower />
+                                    <Follower />
+                                    <Follower />
+                                    <Follower />
+                                    <Follower />
+                                    <Follower />
+                                </div>
                             </div>
                         </div>
                     </Content>
